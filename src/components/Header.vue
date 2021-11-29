@@ -1,7 +1,7 @@
 <template>
   <div id="banner">
     <div id="logo">
-      <img src="@/assets/img/logo2.png" alt="">
+      <img src="@/assets/img/logo-spotify.png" alt="">
     </div>
   </div>
 </template>
