@@ -3,8 +3,8 @@
     <div class="cd" v-for='cd in elements' :key="cd">
         <img :src="cd.poster" :alt="cd.title">
         <h3>{{ cd.title }}</h3>
-        <div>{{ cd.author }}</div>
-        <div>{{ cd.year }}</div>
+        <div class="songs">{{ cd.author }}</div>
+        <div class="songs">{{ cd.year }}</div>
     </div>
   </div>
 </template>
@@ -32,28 +32,28 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .DIsk{
-    background-color: #2e3a46;
+  background-color: #2e3a46;
 }
 
 .cds-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    // padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  // padding: 100px 0;
 }
 
 .cd {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    flex-basis: 200px;
-    padding: 20px;
-    margin: 10px 20px;
-    height: 360px;
-    background: rgb(46, 58, 70);
-    text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 200px;
+  padding: 20px;
+  margin: 10px 20px;
+  height: 360px;
+  background: rgb(46, 58, 70);
+  text-align: center;
 }
 
 .cd img {
@@ -61,18 +61,13 @@ export default {
 }
 
 .cd h3 {
-    margin: 20px 0;
-    color: white;
-    font-size: 22px;
-    text-transform: uppercase;
+  margin: 20px 0;
+  color: white;
+  font-size: 22px;
+  text-transform: uppercase;
 }
-
-.cd span.author {
-    color: grey;
-    font-size: 20px;
-}
-
-.cd span.year {
-    color: grey;
+.songs{
+  color: white;
+  font-size: 15px;
 }
 </style>
